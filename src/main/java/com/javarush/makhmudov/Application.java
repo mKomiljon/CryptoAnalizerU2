@@ -1,8 +1,8 @@
 package com.javarush.makhmudov;
 
-import com.javarush.khmelov.exception.AppException;
 import com.javarush.makhmudov.controller.MainController;
 import com.javarush.makhmudov.entity.Result;
+import com.javarush.makhmudov.exceptions.AppException;
 
 import java.util.Arrays;
 
@@ -15,11 +15,14 @@ public class Application {
     }
 
     public Result run(String[] args) {
+        //encode text.txt encode.txt 12
         if (args.length > 0) {
-            String action = args[0];
+            String action = args[0];  //encode
+            //parameters - encode text.txt encode.txt 12
             String[] parameters = Arrays.copyOfRange(args, 1, args.length);
-            mainController.doAction(action, parameters);
+            return mainController.doAction(action, parameters);
+        } else {
+            throw new AppException("no args");
         }
-        throw new AppException();
     }
 }
