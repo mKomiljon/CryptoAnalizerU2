@@ -8,7 +8,6 @@ public class MainController {
         //action == encode
         //parameters = [text.txt, encode.txt 12]
         Action action = Actions.find(actionName);
-        Result result = action.execute(parameters);
-        return result;
+        return action.execute(parameters);
     }
 }

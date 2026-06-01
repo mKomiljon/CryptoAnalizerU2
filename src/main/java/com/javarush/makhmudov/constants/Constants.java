@@ -1,7 +1,6 @@
 package com.javarush.makhmudov.constants;
 
 import java.io.File;
-import java.nio.file.Files;
 
 public class Constants {
     private static final String rus = "ЙЦУКЕНГШЩЗХЪЭЖДЛОРПАВЫФЯЧСМИТЬБЮ";
