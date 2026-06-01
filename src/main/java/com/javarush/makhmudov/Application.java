@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class Application {
 
-    private MainController mainController;
+    private final MainController mainController;
 
     public Application() {
         mainController = new MainController();
@@ -18,7 +18,7 @@ public class Application {
         if (args.length > 0) {
             String action = args[0];
             String[] parameters = Arrays.copyOfRange(args, 1, args.length);
-            Result result = mainController.doAction(action, parameters);
+            mainController.doAction(action, parameters);
         }
         throw new AppException();
     }
