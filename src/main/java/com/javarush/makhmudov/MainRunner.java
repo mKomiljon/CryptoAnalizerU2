@@ -11,7 +11,3 @@ public class MainRunner {
     }
 }
 
-//        int key=123; //<<<<< buni argumentdan olish mumkin (args)
-//        String text="Привет медвед!"; //<<<<< (args)
-//        String result="............."; //<<<<< (args)
-
