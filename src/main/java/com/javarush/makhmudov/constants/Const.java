@@ -2,7 +2,7 @@ package com.javarush.makhmudov.constants;
 
 import java.io.File;
 
-public class Const {
+public interface Const {
     String ENCODE = "encode";
     String DECODE = "decode";
 
