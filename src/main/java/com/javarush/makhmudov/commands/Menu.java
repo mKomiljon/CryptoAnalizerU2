@@ -24,7 +24,7 @@ public class Menu {
     }
 
     private static int getMode(Scanner scanner) {
-        int mode = 0;
+        int mode;
         do {
             System.out.println(MESSAGE_SELECT_MODE);
             String answer = scanner.nextLine();
