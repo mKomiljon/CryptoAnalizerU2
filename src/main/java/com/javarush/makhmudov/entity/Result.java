@@ -5,7 +5,7 @@ public class Result {
 
     private final ResultCode resultCode;
 
-    public Result(String message, ResultCode resultCode) {
+    public Result(ResultCode resultCode, String message) {
         this.message = message;
         this.resultCode = resultCode;
     }

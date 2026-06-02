@@ -4,11 +4,13 @@ package com.javarush.makhmudov.controller;
 import com.javarush.makhmudov.commands.Action;
 import com.javarush.makhmudov.commands.CommandEncoder;
 import com.javarush.makhmudov.commands.Decoder;
+import com.javarush.makhmudov.commands.Exit;
 import com.javarush.makhmudov.exceptions.AppException;
 
 public enum Actions {
     ENCODE(new CommandEncoder()),
     DECODE(new Decoder());
+    EXIT(new Exit());
 
     private final Action action;
 
