@@ -2,7 +2,7 @@ package com.javarush.makhmudov.constants;
 
 import java.io.File;
 
-public class Constants {
+public class Alphabet {
     private static final String rus = "ЙЦУКЕНГШЩЗХЪЭЖДЛОРПАВЫФЯЧСМИТЬБЮ";
     private static final String eng = "QWERTYUIOPLKJHGFDSAZXCVBNM";
     private static final String son = "0123456789";
