@@ -12,7 +12,7 @@ public class MainController {
         try {
             return action.execute(parameters);
         }catch (NumberFormatException | AppException e){
-            return new Result(e.getMessage(), ResultCode.ERROR);
+            return new Result(ResultCode.ERROR, e.getMessage());
         }
     }
 }

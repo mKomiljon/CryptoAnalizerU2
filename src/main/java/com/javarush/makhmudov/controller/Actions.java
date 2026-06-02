@@ -4,13 +4,12 @@ package com.javarush.makhmudov.controller;
 import com.javarush.makhmudov.commands.Action;
 import com.javarush.makhmudov.commands.CommandEncoder;
 import com.javarush.makhmudov.commands.Decoder;
-import com.javarush.makhmudov.commands.Exit;
+import com.javarush.makhmudov.constants.Const;
 import com.javarush.makhmudov.exceptions.AppException;
 
 public enum Actions {
     ENCODE(new CommandEncoder()),
     DECODE(new Decoder());
-    EXIT(new Exit());
 
     private final Action action;
 
@@ -23,7 +22,8 @@ public enum Actions {
             Actions value = Actions.valueOf(actionName.toUpperCase());
             return value.action;
         } catch (IllegalArgumentException e) {
-            throw new AppException("not found " + actionName, e);
+            String message = String.format(Const.NOT_FOUND_ACTION_FORMAT, actionName);
+            throw new AppException(message, e);
         }
     }
 }
