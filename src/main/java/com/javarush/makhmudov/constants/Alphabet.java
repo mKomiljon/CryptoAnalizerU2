@@ -7,7 +7,7 @@ public class Alphabet {
     private static final String rus = "ЙЦУКЕНГШЩЗХЪЭЖДЛОРПАВЫФЯЧСМИТЬБЮ";
     private static final String belgi = "!@#$%^&*()_+|-=\\[]{}';:/.,<>?";
 
-    private static final char[] alphabet = (rus.toLowerCase() + belgi).toCharArray();
+    public static final char[] alphabet = (rus.toLowerCase() + belgi).toCharArray();
 
     public final static Map<Character, Integer> alphabetMap = new HashMap<>();
 
