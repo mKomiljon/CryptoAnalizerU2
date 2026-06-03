@@ -1,4 +1,4 @@
-package com.javarush.makhmudov.commands;
+package com.javarush.makhmudov.console;
 
 import com.javarush.makhmudov.constants.Const;
 
@@ -24,8 +24,6 @@ interface Messages {
     String ANSI_CYAN = "\u001B[36m";
     String ANSI_RED = "\u001B[31m";
     String ANSI_GREEN = "\u001B[32m";
-    String ANSI_YELLOW = "\u001B[33m";
-    String ANSI_BLUE = "\u001B[34m";
 
     String LINE = "-".repeat(20);
     String MESSAGE_SELECT_MODE = LINE + ANSI_CYAN + "\nPlease select mode:\n" + ANSI_RED + """
@@ -41,4 +39,8 @@ interface Messages {
             Message: %s
             """ + ANSI_CYAN;
 
+    String ERR_FORMAT = ANSI_RED + """
+            ERROR
+            Message: %s
+            """ + ANSI_CYAN;
 }

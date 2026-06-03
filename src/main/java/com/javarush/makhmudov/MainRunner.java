@@ -1,8 +1,9 @@
 package com.javarush.makhmudov;
 
 
-import com.javarush.makhmudov.commands.Menu;
-import com.javarush.makhmudov.entity.Result;
+import com.javarush.makhmudov.console.ConsoleApp;
+import com.javarush.makhmudov.console.Menu;
+import com.javarush.makhmudov.controller.MainController;
 
 import java.util.Scanner;
 
@@ -11,9 +12,9 @@ public class MainRunner {
         //build console app
         Scanner input = new Scanner(System.in);
         Menu menu = new Menu(input);
-        Application application = new Application();
-        Result result = application.run(args);
-        System.out.println(result);
+        MainController mainController = new MainController();
+        ConsoleApp application = new ConsoleApp(mainController, menu);
+        application.run(args);
     }
 }
 

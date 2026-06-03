@@ -39,6 +39,6 @@ public interface Action {
         } catch (IOException e) {
             throw new AppException(Const.INCORRECT_FILE + e.getMessage(), e);
         }
-        return new Result(targetTextFile, ResultCode.OK);
+        return new Result(ResultCode.OK, targetTextFile);
     }
 }

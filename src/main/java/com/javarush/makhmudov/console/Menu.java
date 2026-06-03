@@ -1,8 +1,8 @@
-package com.javarush.makhmudov.commands;
+package com.javarush.makhmudov.console;
 
 import java.util.Scanner;
 
-import static com.javarush.makhmudov.commands.Messages.*;
+import static com.javarush.makhmudov.console.Messages.*;
 
 public class Menu {
     private final Scanner scanner;

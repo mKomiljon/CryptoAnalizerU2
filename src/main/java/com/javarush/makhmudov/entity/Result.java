@@ -1,9 +1,9 @@
 package com.javarush.makhmudov.entity;
 
 public class Result {
-    private final String message;
+    public final String message;
 
-    private final ResultCode resultCode;
+    public final ResultCode resultCode;
 
     public Result(ResultCode resultCode, String message) {
         this.message = message;

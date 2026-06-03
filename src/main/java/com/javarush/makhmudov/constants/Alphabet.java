@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Alphabet {
     private static final String rus = "ЙЦУКЕНГШЩЗХЪЭЖДЛОРПАВЫФЯЧСМИТЬБЮ";
-    private static final String belgi = "!@#$%^&*()_+|-=\\[]{}';:/.,<>?";
+    private static final String belgi = "!@#$%^&*()_+|-=\\[]{}';:/.,<>? ";
 
     public static final char[] alphabet = (rus.toLowerCase() + belgi).toCharArray();
 
