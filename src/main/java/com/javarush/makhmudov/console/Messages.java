@@ -35,7 +35,7 @@ interface Messages {
     String INCORRECT_SELECTION = "Incorrect selection";
 
     String OK_FORMAT = ANSI_GREEN + """
-            ERROR
+            OK
             Message: %s
             """ + ANSI_CYAN;
 

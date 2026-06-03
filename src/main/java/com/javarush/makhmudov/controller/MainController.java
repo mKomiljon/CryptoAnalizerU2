@@ -6,12 +6,12 @@ import com.javarush.makhmudov.entity.ResultCode;
 import com.javarush.makhmudov.exceptions.AppException;
 
 public class MainController {
-    public Result doAction(String actionName, String[] parameters){
+    public Result doAction(String actionName, String[] parameters) {
 
         Action action = Actions.find(actionName);
         try {
             return action.execute(parameters);
-        }catch (NumberFormatException | AppException e){
+        } catch (NumberFormatException | AppException e) {
             return new Result(ResultCode.ERROR, e.getMessage());
         }
     }
