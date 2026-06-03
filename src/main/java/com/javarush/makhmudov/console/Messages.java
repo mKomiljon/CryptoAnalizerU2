@@ -12,7 +12,7 @@ interface Messages {
             },
             {
                     {Const.DECODE},
-                    {"Enter source  or enter for encrypted.txt :\", \"encrypted.txt"},
+                    {"Enter source  or enter for encrypted.txt :", "encrypted.txt"},
                     {"Enter destination or enter for decrypted.txt :", "decrypted.txt"},
                     {"Enter a key or enter for key=1 :", "1"},
             },
